@@ -36,7 +36,7 @@ No frontend interface is included. All functionalities are exposed via APIs and 
 ####  🔐 Authentication Service
 
 ```http
-  POST  http://localhost:8000/api/signup
+  POST  http://127.0.0.1:8000/api/signup
 ```
 | Parameter  | Type     | Description                 |
 | ---------- | -------- | --------------------------- |
@@ -46,7 +46,7 @@ No frontend interface is included. All functionalities are exposed via APIs and 
 
 
 ```http
-  POST http://localhost:8000/api/login
+  POST http://127.0.0.1:8000/api/login
 
 ```
 | Parameter  | Type     | Description                 |
@@ -61,7 +61,7 @@ Requires Authorization: Bearer {token}
 📋 Task Service
 
 ```http
-  POST http://localhost:8000/api/add-task
+  POST http://127.0.0.1:8000/api/add-task
 ```
 | Parameter     | Type     | Description                |
 | ------------- | -------- | -------------------------- |
@@ -69,11 +69,11 @@ Requires Authorization: Bearer {token}
 | `description` | `string` | Optional. Task description |
 
 ```http
-  GET http://localhost:8000/api/tasks
+  GET http://127.0.0.1:8000/api/tasks
 ```
 
 ```http
- PUT http://localhost:8000/api/task/{task}
+ PUT http://127.0.0.1:8000/api/task/{task}
 ```
 | Parameter     | Type     | Description                      |
 | ------------- | -------- | -------------------------------- |
@@ -82,17 +82,17 @@ Requires Authorization: Bearer {token}
 
 
 ```http
- PUT  http://localhost:8000/api/complete/{task}
+ PUT  http://127.0.0.1:8000/api/complete/{task}
 ```
 
 
 ```http
- DELETE http://localhost:8000/api/delete/{task}
+ DELETE http://127.0.0.1:8000/api/delete/{task}
 ```
 
 📝 Task Notes Service
 ```http
- DELETE http://localhost:8000/api/delete/{task}
+ POST http://127.0.0.1:8000/api/task/{task}/note
 ```
 | Parameter | Type     | Description                |
 | --------- | -------- | -------------------------- |
