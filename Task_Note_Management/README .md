@@ -79,16 +79,23 @@ Requires Authorization: Bearer {token}
 | ------------- | -------- | -------------------------------- |
 | `title`       | `string` | **Required.** Updated task title |
 | `description` | `string` | Optional. Updated description    |
+| `id`          | `number` | **Required.** Task Id            |
 
 
 ```http
  PUT  http://127.0.0.1:8000/api/complete/{task}
 ```
+| Parameter     | Type     | Description                      |
+| ------------- | -------- | -------------------------------- |
+| `id`          | `number` | **Required.** Task Id            |
 
 
 ```http
  DELETE http://127.0.0.1:8000/api/delete/{task}
 ```
+| Parameter     | Type     | Description                      |
+| ------------- | -------- | -------------------------------- |
+| `id`          | `number` | **Required.** Task Id            |
 
 📝 Task Notes Service
 ```http
@@ -97,6 +104,7 @@ Requires Authorization: Bearer {token}
 | Parameter | Type     | Description                |
 | --------- | -------- | -------------------------- |
 | `note`    | `string` | **Required.** Note content |
+| `id`      | `number` | **Required.** Task Id      |
 
 
 
